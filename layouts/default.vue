@@ -20,7 +20,7 @@
 
 html {
   font-family:
-    'Montserrat-B',
+    'Montserrat-M',
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
@@ -30,6 +30,7 @@ html {
     sans-serif;
   font-size: 16px;
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,

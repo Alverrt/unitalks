@@ -25,7 +25,7 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
 .login-box {
   width: 400px;
   padding: 40px;

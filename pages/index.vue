@@ -63,7 +63,7 @@ export default { components: { LoginBox } }
 .main-content {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 400px;
 }

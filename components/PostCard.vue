@@ -1,11 +1,11 @@
 <template>
   <div class="post-card">
     <div class="image-field">
-      <img src="~assets/img/designer.svg" alt="" srcset="">
+      <img src="~assets/img/liberty.svg" alt="" srcset="">
     </div>
     <div class="text-field">
       <h1 class="post-card-heading">
-        Denemek
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, totam!
       </h1>
       <hr>
       <p class="post-card-text">
@@ -34,6 +34,7 @@ export default {}
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin-bottom: 50px;
 }
 
 .image-field {
@@ -45,17 +46,13 @@ export default {}
     max-height: inherit;
 }
 
-.text-field {
-}
-
-.bottom-field {
-}
-
 .post-card-heading {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .post-card-text {
-    margin: 10px 0;
+    margin: 20px 0;
+    line-height: 170%;
+    letter-spacing: 0.8px;
 }
 </style>

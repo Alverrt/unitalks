@@ -3,6 +3,11 @@
     <Navbar />
     <div class="container">
       <PostCard />
+      <PostCard />
+      <PostCard />
+      <PostCard />
+      <PostCard />
+      <PostCard />
     </div>
   </div>
 </template>
@@ -22,5 +27,8 @@ export default {
     margin: 0 auto;
     width: 70%;
     padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 </style>

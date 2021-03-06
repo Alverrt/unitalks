@@ -19,7 +19,6 @@ export default {
 }
 
 .signup-button:hover {
-background: linear-gradient(to top left, #0C05FE, #ACB1E6);
-box-shadow: 0 0 20px 2px #0C05FE;
+box-shadow: 0 0 25px 4px #f15c41;
 }
 </style>

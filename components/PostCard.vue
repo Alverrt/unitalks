@@ -17,7 +17,11 @@
         aperiam! Illo hic officiis dolorem.
       </p>
     </div>
-    <div class="bottom-field"></div>
+    <div class="bottom-field">
+      <span>Kalp</span>
+      <span>Yorum</span>
+      <span>Paylas</span>
+    </div>
   </div>
 </template>
 <script>
@@ -54,5 +58,12 @@ export default {}
     margin: 20px 0;
     line-height: 170%;
     letter-spacing: 0.8px;
+}
+
+.bottom-field {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
 }
 </style>

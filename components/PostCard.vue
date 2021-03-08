@@ -4,6 +4,9 @@
       <img src="~assets/img/liberty.svg" alt="" srcset="">
     </div>
     <div class="text-field">
+      <div class="sender">
+        <span>-- &ExampleUserName</span>
+      </div>
       <h1 class="post-card-heading">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, totam!
       </h1>
@@ -50,8 +53,12 @@ export default {}
     max-height: inherit;
 }
 
+.sender {
+  margin-top: 20px;
+}
+
 .post-card-heading {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .post-card-text {

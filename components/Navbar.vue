@@ -4,10 +4,10 @@
       <div class="nav-links">
         <ul class="nav-items">
           <li class="nav-item">
-            Link
+            En Popülerler
           </li>
           <li class="nav-item">
-            Link
+            Niltalks Nedir?
           </li>
           <li class="nav-item">
             Link

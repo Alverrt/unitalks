@@ -12,7 +12,7 @@
             Biseyler'e Hosgeldin
           </h1>
           <p class="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae est neque tempore omnis dolores?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem optio cupiditate exercitationem veritatis enim totam et harum velit sequi quaerat voluptates ab ea dolorum ipsum odio, itaque consequatur ratione accusantium!
           </p>
         </div>
         <div class="main-content">

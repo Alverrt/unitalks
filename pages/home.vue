@@ -1,6 +1,9 @@
 <template>
   <div class="bg">
     <Navbar />
+    <div class="post-filter">
+      <PostFilter />
+    </div>
     <div class="container">
       <PostCard />
       <PostCard />
@@ -30,5 +33,10 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.post-filter {
+  width: 30%;
+  margin: 40px auto 0 auto;
 }
 </style>

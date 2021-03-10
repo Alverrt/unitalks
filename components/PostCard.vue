@@ -5,7 +5,7 @@
     </div>
     <div class="text-field">
       <div class="sender">
-        <span>-- &ExampleUserName</span>
+        <span>-- </span><span class="sender-name">&ExampleUserName</span>
       </div>
       <h1 class="post-card-heading">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, totam!
@@ -14,17 +14,10 @@
       <p class="post-card-text">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, modi
         ratione iste, eos eum placeat sunt maxime delectus beatae magni dolor
-        amet velit voluptatum deserunt? Voluptatibus incidunt omnis ab,
-        repudiandae voluptate repellendus iure, alias recusandae accusantium
-        eligendi optio non maxime tenetur doloribus laborum quo possimus
-        aperiam! Illo hic officiis dolorem.
+        amet velit voluptatum deserunt?
       </p>
     </div>
-    <div class="bottom-field">
-      <span>Kalp</span>
-      <span>Yorum</span>
-      <span>Paylas</span>
-    </div>
+    <PostBottom />
   </div>
 </template>
 <script>
@@ -57,6 +50,14 @@ export default {}
   margin-top: 20px;
 }
 
+.sender-name {
+  cursor: pointer;
+}
+
+.sender-name:hover {
+  text-decoration: underline;
+}
+
 .post-card-heading {
     margin-bottom: 20px;
 }
@@ -65,12 +66,5 @@ export default {}
     margin: 20px 0;
     line-height: 170%;
     letter-spacing: 0.8px;
-}
-
-.bottom-field {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 0;
 }
 </style>

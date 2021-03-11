@@ -30,7 +30,7 @@ export default {}
   background-color: #ffffff;
   opacity: .85;
   border-radius: 10px;
-  box-shadow: 5px 5px 45px 5px #000000;
+  box-shadow: 5px 5px 30px 5px #000000;
   display: flex;
   flex-direction: column;
   padding: 20px;

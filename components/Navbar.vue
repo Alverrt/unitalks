@@ -23,8 +23,9 @@
       </div>
 
       <div class="login-and-signup-buttons">
-        <LoginButton />
-        <SignUpButton />
+        <LoginButton v-if="false" />
+        <SignUpButton v-if="false" />
+        <ProfileButton />
       </div>
     </div>
   </div>
@@ -33,8 +34,9 @@
 <script>
 import SignUpButton from '~/components/buttons/SignUpButton.vue'
 import LoginButton from '~/components/buttons/LoginButton.vue'
+import ProfileButton from '~/components/buttons/ProfileButton.vue'
 export default {
-  components: { SignUpButton, LoginButton }
+  components: { SignUpButton, LoginButton, ProfileButton }
 }
 </script>
 

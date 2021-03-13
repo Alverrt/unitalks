@@ -5,6 +5,9 @@
       <CommentPostCard />
       <CommentAnswer class="post-answer-first" />
       <CommentAnswer class="post-answer-mid" />
+      <CommentAnswer class="child-comment" />
+      <CommentAnswer class="post-answer-mid" />
+      <CommentAnswer class="post-answer-mid" />
     </div>
   </div>
 </template>
@@ -33,9 +36,16 @@ export default {
 
 .post-answer-first {
   margin: 40px 0 20px 0;
+  width: 92%;
 }
 
 .post-answer-mid {
   margin: 20px 0;
+  width: 92%;
+}
+
+.child-comment {
+  margin: 20px 0;
+  width: 80%;
 }
 </style>

@@ -23,7 +23,6 @@ export default {}
 
 <style scoped>
 .post-answer {
-  width: 92%;
   align-self: flex-end;
   background-color: #ffffff;
   border-radius: 10px;

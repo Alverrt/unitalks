@@ -28,16 +28,9 @@ export default {
   height: 40px;
 }
 
-.heart-ico {
+.heart-ico, .comment-ico, .share-ico {
   filter: invert(19%) sepia(83%) saturate(5691%) hue-rotate(355deg) brightness(105%) contrast(123%);
-}
-
-.comment-ico {
-  filter: invert(19%) sepia(83%) saturate(5691%) hue-rotate(355deg) brightness(105%) contrast(123%);
-}
-
-.share-ico {
-  filter: invert(19%) sepia(83%) saturate(5691%) hue-rotate(355deg) brightness(105%) contrast(123%);
+  -webkit-filter: invert(19%) sepia(83%) saturate(5691%) hue-rotate(355deg) brightness(105%) contrast(123%);
 }
 
 .ico-wrapper {

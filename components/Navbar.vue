@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <div class="navbar-container">
-      <div class="nav-links">
+      <div v-if="false" class="nav-links">
         <ul class="nav-items">
           <li class="nav-item">
             En Popülerler
@@ -18,16 +18,29 @@
         </ul>
       </div>
 
-      <div class="brand-field">
+      <div :class="{'brand-mobile': isMobile, 'brand-field': !isMobile}">
         Logo
       </div>
 
       <div class="login-and-signup-buttons">
         <LoginButton v-if="false" />
         <SignUpButton v-if="false" />
-        <ProfileButton />
+        <ProfileButton v-if="false" />
+      </div>
+      <div v-if="isMobile" class="hamburger-ico" @click="openMobileNav">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fas"
+          data-icon="bars"
+          class="svg-inline--fa fa-bars fa-w-14"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        ><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" /></svg>
       </div>
     </div>
+    <NavbarMobile v-if="isMobile && mobileNav" />
   </div>
 </template>
 
@@ -35,8 +48,27 @@
 import SignUpButton from '~/components/buttons/SignUpButton.vue'
 import LoginButton from '~/components/buttons/LoginButton.vue'
 import ProfileButton from '~/components/buttons/ProfileButton.vue'
+import NavbarMobile from '~/components/NavbarMobile.vue'
 export default {
-  components: { SignUpButton, LoginButton, ProfileButton }
+  components: { SignUpButton, LoginButton, ProfileButton, NavbarMobile },
+  data () {
+    return {
+      isMobile: false,
+      mobileNav: false
+    }
+  },
+  mounted () {
+    this.handleView()
+    addEventListener('resize', this.handleView)
+  },
+  methods: {
+    handleView () {
+      this.isMobile = window.innerWidth <= 500
+    },
+    openMobileNav () {
+      this.mobileNav = !this.mobileNav
+    }
+  }
 }
 </script>
 
@@ -74,6 +106,10 @@ export default {
     text-align: center;
 }
 
+.brand-mobile {
+  font-size: 24px;
+}
+
 .nav-items {
     display: flex;
     padding: 0;
@@ -90,5 +126,11 @@ export default {
 
 .login-and-signup-buttons * {
   margin-right: 40px;
+}
+
+.hamburger-ico svg {
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
 }
 </style>

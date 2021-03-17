@@ -1,30 +1,20 @@
 <template>
   <div class="bg">
-    <Navbar />
-    <div class="post-filter">
-      <PostFilter />
-    </div>
-    <div class="container">
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-      <PostCard />
-    </div>
+    <div class="container"></div>
   </div>
 </template>
+
 <script>
 export default {
 
 }
 </script>
+
 <style>
 .bg {
   min-height: 100vh;
   background: rgb(255,119,51);
   background: linear-gradient(324deg, rgba(255,119,51,1) 61%, rgba(235,86,180,1) 90%);
-  width: 100%;
 }
 
 .container {
@@ -34,10 +24,5 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.post-filter {
-  width: 30%;
-  margin: 40px auto 0 auto;
 }
 </style>

@@ -31,6 +31,7 @@ html {
   font-size: 16px;
   box-sizing: border-box;
   height: 100%;
+  width: 100%;
 }
 
 *,

@@ -5,7 +5,7 @@
     </div>
     <div class="text-field">
       <div class="sender">
-        <span>-- </span><span class="sender-name">&ExampleUserName</span>
+        <span>-- </span><span class="sender-name">&Santafor</span>
       </div>
       <h1 class="post-card-heading">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, totam!

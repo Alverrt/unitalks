@@ -1,13 +1,13 @@
 <template>
   <div class="navbar">
     <div class="navbar-container">
-      <div v-if="false" class="nav-links">
+      <div v-if="!isMobile" class="nav-links">
         <ul class="nav-items">
           <li class="nav-item">
             En Popülerler
           </li>
           <li class="nav-item">
-            Niltalks Nedir?
+            Nasdf Nedir?
           </li>
           <li class="nav-item">
             Link
@@ -23,9 +23,9 @@
       </div>
 
       <div class="login-and-signup-buttons">
-        <LoginButton v-if="false" />
-        <SignUpButton v-if="false" />
-        <ProfileButton v-if="false" />
+        <LoginButton v-if="!isMobile" />
+        <SignUpButton v-if="!isMobile" />
+        <ProfileButton v-if="!isMobile && isUserLoggedIn" />
       </div>
       <div v-if="isMobile" class="hamburger-ico" @click="openMobileNav">
         <svg
@@ -54,7 +54,8 @@ export default {
   data () {
     return {
       isMobile: false,
-      mobileNav: false
+      mobileNav: false,
+      isUserLoggedIn: false
     }
   },
   mounted () {

@@ -1,6 +1,6 @@
 # unitalk
 
-![image](https://i.hizliresim.com/I4Alfe.png)
+![image](https://i.hizliresim.com/BSBzrj.png)
 
 
 ## Build Setup

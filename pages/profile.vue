@@ -3,22 +3,18 @@
     <Navbar />
     <div class="container">
       <div class="profile-wrapper">
-        <div class="username-wrapper">
-          <div class="username">
-            -- &ExampleUserName
-          </div>
-          <div class="settings-ico"></div>
+        <div class="top-wrapper">
+          <div class="profile-photo"></div>
+          <div class="bio"></div>
         </div>
-        <div class="profile-info">
-          <div class="left-profile-side">
-            <div class="bio"></div>
-            <div class="social-and-zodiac-wrapper">
-              <div class="social-links"></div>
-              <div class="zodiac-stats-wrapper">
-                <div class="zodiac-mbti"></div>
-                <div class="profile-stats"></div>
-              </div>
+        <div class="bottom-wraper">
+          <div class="username-stats-wraper">
+            <div class="username">
+              <p class="username-text">
+                -- &ExampleUserName
+              </p>
             </div>
+            <div class="stats-area"></div>
           </div>
           <div class="tag-area"></div>
         </div>
@@ -51,15 +47,86 @@ export default {
 
 .profile-wrapper {
   width: 80%;
+  padding: 20px;
   height: 80vh;
-  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  opacity: .85;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px 5px #000000;
+}
+
+.top-wrapper {
+  border: 1px solid red;
+  height: 45%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+}
+
+.profile-photo {
+  border: 1px solid red;
+  width: 280px;
+  height: 100%;
+}
+
+.bio {
+  flex-grow: 1;
+  max-width: 65%;
+  border: 1px solid blue;
+  height: auto;
+  margin-left: 22px;
+}
+
+.bottom-wraper {
+  border: 1px solid blue;
+  height: 54%;
+  width: 100%;
+  margin-top: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.username-stats-wraper {
+  width: 61%;
+  height: 100%;
+  padding: 5px;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+}
+
+.tag-area {
+  width: 37%;
+  margin-left: auto;
+  padding: 5px;
+  height: 100%;
+  border: 1px solid purple;
+}
+
+.username {
+  width: 280px;
+  height: 30px;
+  border: 1px solid brown;
+}
+
+.username p {
+  display: inline-block;
+  font-size: 22px;
+}
+
+.stats-area {
+  height: 80%;
+  width: 100%;
+  border: 1px solid tomato;
+  margin-top: auto;
+}
+</style>
+
+<!--
   border-radius: 10px;
   box-shadow: 5px 5px 30px 5px #000000;
   padding: 25px;
   opacity: .9;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-</style>
+ -->

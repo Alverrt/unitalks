@@ -5,7 +5,11 @@
       <div class="profile-wrapper">
         <div class="top-wrapper">
           <div class="profile-photo"></div>
-          <div class="bio"></div>
+          <div class="bio">
+            <p class="bio-text">
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure dolor maiores odio quo amet qui repellendus esse similique optio. "
+            </p>
+          </div>
         </div>
         <div class="bottom-wraper">
           <div class="username-stats-wraper">
@@ -77,6 +81,14 @@ export default {
   border: 1px solid blue;
   height: auto;
   margin-left: 22px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.bio p {
+  display: inline-block;
+  letter-spacing: .8px;
 }
 
 .bottom-wraper {
@@ -113,7 +125,7 @@ export default {
 
 .username p {
   display: inline-block;
-  font-size: 22px;
+  font-size: 21px;
 }
 
 .stats-area {

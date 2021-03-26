@@ -4,7 +4,9 @@
     <div class="container">
       <div class="profile-wrapper">
         <div class="top-wrapper">
-          <div class="profile-photo"></div>
+          <div class="profile-photo">
+            <img src="https://meralkoraltan.com/wp-content/uploads/2013/08/42-280x280.jpg" alt="">
+          </div>
           <div class="bio">
             <p class="bio-text">
               " Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure dolor maiores odio quo amet qui repellendus esse similique optio. "
@@ -18,7 +20,32 @@
                 -- &ExampleUserName
               </p>
             </div>
-            <div class="stats-area"></div>
+            <div class="stats-area">
+              <div class="stat total-hit">
+                <div class="stat-name">
+                  Toplam Hit
+                </div>
+                <div class="stat-count">
+                  197
+                </div>
+              </div>
+              <div class="stat total-hit">
+                <div class="stat-name">
+                  Toplam Hit
+                </div>
+                <div class="stat-count">
+                  197
+                </div>
+              </div>
+              <div class="stat total-hit">
+                <div class="stat-name">
+                  Toplam Hit
+                </div>
+                <div class="stat-count">
+                  197
+                </div>
+              </div>
+            </div>
           </div>
           <div class="tag-area"></div>
         </div>
@@ -56,7 +83,7 @@ export default {
   display: flex;
   flex-direction: column;
   background: #ffffff;
-  opacity: .85;
+  opacity: .9;
   border-radius: 10px;
   box-shadow: 5px 5px 30px 5px #000000;
 }
@@ -67,12 +94,19 @@ export default {
   width: 100%;
   padding: 10px;
   display: flex;
+  align-items: center;
 }
 
 .profile-photo {
   border: 1px solid red;
-  width: 280px;
-  height: 100%;
+  width: 200px;
+  height: 200px;
+}
+
+.profile-photo img {
+  display: inline-block;
+  border-radius: 130px;
+  width: 100%;
 }
 
 .bio {
@@ -80,7 +114,7 @@ export default {
   max-width: 65%;
   border: 1px solid blue;
   height: auto;
-  margin-left: 22px;
+  margin: 0 auto;
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -133,6 +167,33 @@ export default {
   width: 100%;
   border: 1px solid tomato;
   margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.total-hit {
+  height: 120px;
+  width: 110px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px 1px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stat-name {
+  font-size: 20px;
+}
+
+.stat-count {
+  font-size: 36px;
+  letter-spacing: 2px;
+  background: -webkit-linear-gradient(#ff7733, #eb56b4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
 

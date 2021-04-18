@@ -1,5 +1,6 @@
 <template>
   <div class="bg">
+    <SignUp />
     <Navbar />
     <div class="post-filter">
       <PostFilter />

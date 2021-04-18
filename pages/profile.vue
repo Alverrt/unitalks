@@ -47,7 +47,61 @@
               </div>
             </div>
           </div>
-          <div class="tag-area"></div>
+          <div class="tag-area">
+            <div class="tag-wraper">
+              <div class="tag">
+                <span class="hashtag">#</span>DeDen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeDsfsen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeDsadfsen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeDsen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeDen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeDasdfen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeDen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeDen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeDafdsen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeDen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DesdDen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DedDen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeassaaDen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeDefasdfdsssan
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeD dsfaf den
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>Desdf dDen
+              </div>
+              <div class="tag">
+                <span class="hashtag">#</span>DeDends
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -89,7 +143,8 @@ export default {
 }
 
 .top-wrapper {
-  border: 1px solid red;
+  border: 5px solid rgba(237, 117, 51, .4);
+  border-radius: 10px;
   height: 45%;
   width: 100%;
   padding: 10px;
@@ -98,7 +153,7 @@ export default {
 }
 
 .profile-photo {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   width: 200px;
   height: 200px;
 }
@@ -112,7 +167,7 @@ export default {
 .bio {
   flex-grow: 1;
   max-width: 65%;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
   height: auto;
   margin: 0 auto;
   padding: 0 10px;
@@ -126,7 +181,7 @@ export default {
 }
 
 .bottom-wraper {
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
   height: 54%;
   width: 100%;
   margin-top: auto;
@@ -135,10 +190,11 @@ export default {
 }
 
 .username-stats-wraper {
-  width: 61%;
+  width: 62%;
   height: 100%;
   padding: 5px;
-  border: 1px solid green;
+  border: 5px solid rgba(237, 117, 51, .4);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -148,13 +204,43 @@ export default {
   margin-left: auto;
   padding: 5px;
   height: 100%;
-  border: 1px solid purple;
+  border: 5px solid rgba(237, 117, 51, .4);
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.tag-wraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hashtag {
+  background: -webkit-linear-gradient(#ff7733, #eb56b4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  margin-right: 3px;
+}
+
+.tag {
+  margin: 10px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
 }
 
 .username {
-  width: 280px;
-  height: 30px;
-  border: 1px solid brown;
+  width: 90%;
+  height: 50px;
+  /*border: 1px solid brown;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .username p {
@@ -162,10 +248,16 @@ export default {
   font-size: 21px;
 }
 
+.social-button {
+  width: 40px;
+  height: 40px;
+  /*border: 1px solid black;*/
+}
+
 .stats-area {
   height: 80%;
   width: 100%;
-  border: 1px solid tomato;
+  /*border: 1px solid tomato;*/
   margin-top: auto;
   display: flex;
   justify-content: space-around;

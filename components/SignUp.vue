@@ -10,10 +10,12 @@
         <h3 class="sign-up-label">
           Sign Up
         </h3>
-        <input id="username" type="text" placeholder="Username">
-        <input id="email" type="email" placeholder="E-Mail">
-        <input id="password" type="password" placeholder="Password">
-        <input type="password" placeholder="Password Vertification">
+        <label for="username">Username</label>
+        <input id="username" class="signup-inputs" type="text" placeholder="Username" autocomplete="off">
+        <label for="email">E-Mail</label>
+        <input id="email" class="signup-inputs" type="email" placeholder="E-Mail" autocomplete="off">
+        <label for="password">Password</label>
+        <input id="password" class="signup-inputs" type="password" placeholder="Password" autocomplete="off">
       </div>
     </div>
   </div>
@@ -21,6 +23,8 @@
 
 <script>
 export default {
+  mounted () {
+  },
   methods: {
     disableSignUp (event) {
       if (event.target === document.querySelector('.sign-up-bg')) {
@@ -32,6 +36,10 @@ export default {
 </script>
 
 <style>
+label {
+  width: 70%;
+  float: left;
+}
 .sign-up-bg {
     position: absolute;
     z-index: 40;
@@ -68,10 +76,15 @@ export default {
 .sign-up-form > input {
   margin: 10px 0;
   width: 70%;
-  padding: 10px 5px;
+  padding: 10px 0 10px 8px;
   border: 1px solid gray;
-  border-radius: 10px;
-  font-size: 18px;
+  border-radius: 4px;
+  font-size: 13px;
+  outline: none;
+}
+
+.sign-up-form > input:focus {
+  border-color: blue;
 }
 
 body {
@@ -80,7 +93,7 @@ body {
 
 .sign-up-label {
   text-align: center;
-  padding: 7px 0;
+  padding: 8px 0;
 }
 
 .sign-up-logo {

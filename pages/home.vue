@@ -1,6 +1,6 @@
 <template>
   <div class="bg">
-    <SignUp />
+    <SignUp v-if="getSignUpState" />
     <Navbar />
     <div class="post-filter">
       <PostFilter />
@@ -16,8 +16,13 @@
   </div>
 </template>
 <script>
-export default {
 
+export default {
+  computed: {
+    getSignUpState () {
+      return this.$store.getters['home/getSignUpState']
+    }
+  }
 }
 </script>
 <style>

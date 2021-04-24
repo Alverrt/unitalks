@@ -1,5 +1,5 @@
 <template>
-  <div class="sign-up-bg">
+  <div class="sign-up-bg" @click="disableSignUp($event)">
     <div class="sign-up-wrapper">
       <div class="sign-up-texts">
         <div class="sign-up-logo">
@@ -21,7 +21,13 @@
 
 <script>
 export default {
-
+  methods: {
+    disableSignUp (event) {
+      if (event.target === document.querySelector('.sign-up-bg')) {
+        this.$store.commit('home/toggle')
+      }
+    }
+  }
 }
 </script>
 

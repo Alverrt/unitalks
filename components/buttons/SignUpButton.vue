@@ -1,10 +1,14 @@
 <template>
-  <a href="#" class="signup-button">Kayit Ol</a>
+  <a class="signup-button" @click="appearSignUp">Kayit Ol</a>
 </template>
 
 <script>
 export default {
-
+  methods: {
+    appearSignUp () {
+      this.$store.commit('home/toggle')
+    }
+  }
 }
 </script>
 

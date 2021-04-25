@@ -20,6 +20,7 @@ export default {
   color: #ffffff;
   border-radius: 6px;
   box-shadow: 0 0 20px 2px #f15c41;
+  cursor: pointer;
 }
 
 .signup-button:hover {

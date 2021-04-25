@@ -7,15 +7,15 @@
         </div>
       </div>
       <div class="sign-up-form">
-        <h3 class="sign-up-label">
-          Sign Up
-        </h3>
         <label for="username">Username</label>
         <input id="username" class="signup-inputs" type="text" placeholder="Username" autocomplete="off">
         <label for="email">E-Mail</label>
         <input id="email" class="signup-inputs" type="email" placeholder="E-Mail" autocomplete="off">
         <label for="password">Password</label>
         <input id="password" class="signup-inputs" type="password" placeholder="Password" autocomplete="off">
+        <a class="signup-submit-button">
+          Kayit Ol
+        </a>
       </div>
     </div>
   </div>
@@ -23,7 +23,11 @@
 
 <script>
 export default {
-  mounted () {
+  beforeMount () {
+    document.querySelector('body').style.overflowY = 'hidden'
+  },
+  beforeDestroy () {
+    document.querySelector('body').style.overflowY = 'auto'
   },
   methods: {
     disableSignUp (event) {
@@ -35,7 +39,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 label {
   width: 70%;
   float: left;
@@ -63,6 +67,10 @@ label {
 
 .sign-up-texts {
   padding: 10px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sign-up-form {
@@ -79,16 +87,12 @@ label {
   padding: 10px 0 10px 8px;
   border: 1px solid gray;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 15px;
   outline: none;
 }
 
 .sign-up-form > input:focus {
-  border-color: blue;
-}
-
-body {
-    overflow-y: hidden;
+  box-shadow: 0 0 5px 2px #f15c41;
 }
 
 .sign-up-label {
@@ -99,7 +103,23 @@ body {
 .sign-up-logo {
   text-align: center;
   margin-top: 10px;
-  flex: 2 0 auto;
-  height: 50px;
+  font-size: 32px;
+  letter-spacing: 4px;
+}
+
+.signup-submit-button {
+  background: linear-gradient(to right,#e052a0,#f15c41);
+  padding: 10px 25px;
+  margin-top: 21px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+
+  box-shadow: 0 0 10px 0px #f15c41;
+}
+
+.signup-submit-button:hover {
+  box-shadow: 0 0 10px 2px #f15c41;
 }
 </style>

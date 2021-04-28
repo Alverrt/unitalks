@@ -1,10 +1,14 @@
 <template>
-  <a href="#" class="login-button">Giris Yap</a>
+  <a class="login-button" @click="appearLogin">Giris Yap</a>
 </template>
 
 <script>
 export default {
-
+  methods: {
+    appearLogin () {
+      this.$store.commit('home/toggleLogin')
+    }
+  }
 }
 </script>
 
@@ -16,6 +20,7 @@ export default {
   border: 2px solid #f15c41;
   border-radius: 10px;
   box-shadow: 0 0 15px 1px #e052a0;
+  cursor: pointer;
 }
 
 .login-button:hover {

@@ -23,8 +23,8 @@
       </div>
 
       <div class="login-and-signup-buttons">
-        <LoginButton v-if="!isMobile" />
-        <SignUpButton v-if="!isMobile" />
+        <LoginButton v-if="!isMobile && !isUserLoggedIn" />
+        <SignUpButton v-if="!isMobile && !isUserLoggedIn" />
         <ProfileButton v-if="!isMobile && isUserLoggedIn" />
       </div>
       <div v-if="isMobile" class="hamburger-ico" @click="openMobileNav">
@@ -55,7 +55,7 @@ export default {
     return {
       isMobile: false,
       mobileNav: false,
-      isUserLoggedIn: false
+      isUserLoggedIn: true
     }
   },
   mounted () {

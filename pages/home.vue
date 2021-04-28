@@ -1,9 +1,15 @@
 <template>
   <div class="bg">
     <SignUp v-if="getSignUpState" />
+    <Login v-if="getLoginState" />
     <Navbar />
     <div class="post-filter">
       <PostFilter />
+    </div>
+    <div class="add-post-button-wrapper">
+      <div class="add-new-post">
+        <NewPostButton />
+      </div>
     </div>
     <div class="container">
       <PostCard />
@@ -16,11 +22,16 @@
   </div>
 </template>
 <script>
+import NewPostButton from '~/components/buttons/NewPostButton.vue'
 
 export default {
+  components: { NewPostButton },
   computed: {
     getSignUpState () {
       return this.$store.getters['home/getSignUpState']
+    },
+    getLoginState () {
+      return this.$store.getters['home/getLoginState']
     }
   }
 }
@@ -45,5 +56,16 @@ export default {
 .post-filter {
   width: 30%;
   margin: 40px auto 0 auto;
+}
+
+.add-post-button-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-new-post {
+  margin-left: auto;
 }
 </style>

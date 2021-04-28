@@ -182,6 +182,8 @@ export default {
 
 .bottom-wraper {
   /*border: 1px solid blue;*/
+  border: 5px solid rgba(237, 117, 51, .4);
+  border-radius: 10px;
   height: 54%;
   width: 100%;
   margin-top: auto;
@@ -193,7 +195,7 @@ export default {
   width: 62%;
   height: 100%;
   padding: 5px;
-  border: 5px solid rgba(237, 117, 51, .4);
+  border: 3px solid rgba(237, 117, 51, .2);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -204,7 +206,7 @@ export default {
   margin-left: auto;
   padding: 5px;
   height: 100%;
-  border: 5px solid rgba(237, 117, 51, .4);
+  border: 3px solid rgba(237, 117, 51, .2);
   border-radius: 10px;
   overflow-y: scroll;
 }
